@@ -1,2 +1,2 @@
 <!DOCTYPE Scene>
-<Scene EnableVersionDrawing="0" Name="EXO_01_GLASSES"/>
+<Scene Name="EXO_01_GLASSES" EnableVersionDrawing="0"/>
