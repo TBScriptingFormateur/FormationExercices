@@ -55,7 +55,7 @@
      <collapsed val="false"/>
     </options>
     <nodeslist>
-     <module type="COMPOSITE" name="Composite" pos="0,0,3" publishUnderTab="Composite">
+     <module type="COMPOSITE" name="Composite" pos="0,0,4" publishUnderTab="Composite">
       <options>
        <collapsed val="false"/>
        <version val="1"/>
@@ -74,13 +74,13 @@
        <mergeVector val="false"/>
       </attrs>
      </module>
-     <module type="DISPLAY" name="Display" pos="50,50,8" publishUnderTab="Display">
+     <module type="DISPLAY" name="Display" pos="50,50,9" publishUnderTab="Display">
       <options>
        <collapsed val="false"/>
        <version val="1"/>
       </options>
      </module>
-     <module type="WRITE" name="Write" pos="-50,50,9" publishUnderTab="Write">
+     <module type="WRITE" name="Write" pos="-50,50,10" publishUnderTab="Write">
       <options>
        <collapsed val="false"/>
        <version val="1"/>
@@ -117,7 +117,7 @@
        <cleanUpPartitionFolders val="true"/>
       </attrs>
      </module>
-     <module type="READ" name="DOGGY_DOG" pos="-84,-112,4" publishUnderTab="Drawing">
+     <module type="READ" name="DOGGY_DOG" pos="-84,-112,5" publishUnderTab="Drawing">
       <options>
        <collapsed val="false"/>
        <version val="1"/>
@@ -229,7 +229,7 @@
        <tileVertical val="false"/>
       </attrs>
      </module>
-     <module type="READ" name="GLASSES_X12_Y7" pos="-277,-112,6" publishUnderTab="GLASSES">
+     <module type="READ" name="GLASSES_X12_Y7" pos="-277,-112,7" publishUnderTab="GLASSES">
       <options>
        <collapsed val="false"/>
        <version val="1"/>
@@ -341,7 +341,7 @@
        <tileVertical val="false"/>
       </attrs>
      </module>
-     <module type="PEG" name="GLASSES-P" pos="-241,-163,5" publishUnderTab="GLASSES-P">
+     <module type="PEG" name="GLASSES-P" pos="-241,-163,6" publishUnderTab="GLASSES-P">
       <options>
        <collapsed val="false"/>
        <version val="1"/>
@@ -403,7 +403,7 @@
        <addCompositeToGroup val="true"/>
       </attrs>
      </module>
-     <module type="PEG" name="DOGGY_DOG-P" pos="-68,-156,7" publishUnderTab="DOGGY_DOG-P">
+     <module type="PEG" name="DOGGY_DOG-P" pos="-68,-156,8" publishUnderTab="DOGGY_DOG-P">
       <options>
        <collapsed val="false"/>
        <version val="1"/>
@@ -465,7 +465,7 @@
        <addCompositeToGroup val="true"/>
       </attrs>
      </module>
-     <module type="READ" name="NOTICE" pos="75,-112,2" publishUnderTab="Drawing">
+     <module type="READ" name="NOTICE" pos="75,-112,3" publishUnderTab="Drawing">
       <options>
        <collapsed val="false"/>
        <version val="1"/>
@@ -577,7 +577,7 @@
        <tileVertical val="false"/>
       </attrs>
      </module>
-     <module type="COLOR_CARD" name="Colour-Card" pos="211,-112,1" publishUnderTab="Colour-Card">
+     <module type="COLOR_CARD" name="Colour-Card" pos="211,-112,2" publishUnderTab="Colour-Card">
       <options>
        <locked val="true"/>
        <collapsed val="false"/>
@@ -595,6 +595,68 @@
        </color>
       </attrs>
      </module>
+     <module type="PEG" name="Colour-Card-P" pos="211,-212,1" publishUnderTab="Colour-Card-P">
+      <options>
+       <collapsed val="false"/>
+       <version val="1"/>
+      </options>
+      <attrs>
+       <enable3d val="false"/>
+       <faceCamera val="false"/>
+       <cameraAlignment val="NO_CAMERA_ALIGNMENT"/>
+       <position>
+        <separate val="false"/>
+        <x val="0" defaultValue="0"/>
+        <y val="0" defaultValue="0"/>
+        <z val="0" defaultValue="0"/>
+       </position>
+       <scale>
+        <separate val="true"/>
+        <inFields val="false"/>
+        <xy val="1" defaultValue="1"/>
+        <x val="1" defaultValue="1"/>
+        <y val="1" defaultValue="1"/>
+        <z val="1" defaultValue="1"/>
+       </scale>
+       <rotation>
+        <separate val="false"/>
+        <anglex val="0" defaultValue="0"/>
+        <angley val="0" defaultValue="0"/>
+        <anglez val="0" defaultValue="0"/>
+       </rotation>
+       <angle val="0" defaultValue="0"/>
+       <skew val="0" defaultValue="0"/>
+       <pivot>
+        <x val="0" defaultValue="0"/>
+        <y val="0" defaultValue="0"/>
+        <z val="0" defaultValue="0"/>
+       </pivot>
+       <splineOffset>
+        <x val="0" defaultValue="0"/>
+        <y val="0" defaultValue="0"/>
+        <z val="0" defaultValue="0"/>
+       </splineOffset>
+       <ignoreParentPegScaling val="false"/>
+       <disableFieldRendering val="false"/>
+       <depth val="0"/>
+       <enableMinMaxAngle val="false"/>
+       <minAngle val="-360" defaultValue="-360"/>
+       <maxAngle val="360" defaultValue="360"/>
+       <nailForChildren val="false"/>
+       <ikHoldOrientation val="false"/>
+       <ikHoldX val="false"/>
+       <ikHoldY val="false"/>
+       <ikExcluded val="false"/>
+       <ikCanRotate val="true"/>
+       <ikCanTranslateX val="false"/>
+       <ikCanTranslateY val="false"/>
+       <ikBoneX val="0.20000000000000001" defaultValue="0.20000000000000001"/>
+       <ikBoneY val="0" defaultValue="0"/>
+       <ikStiffness val="1" defaultValue="1"/>
+       <groupAtNetworkBuilding val="false"/>
+       <addCompositeToGroup val="true"/>
+      </attrs>
+     </module>
     </nodeslist>
     <linkedlist>
      <link out="Composite" in="Display"/>
@@ -605,6 +667,7 @@
      <link out="DOGGY_DOG-P" in="DOGGY_DOG" inport="0"/>
      <link out="NOTICE" in="Composite" inport="2"/>
      <link out="Colour-Card" in="Composite" inport="0"/>
+     <link out="Colour-Card-P" in="Colour-Card" inport="0"/>
     </linkedlist>
    </rootgroup>
    <unconnectedComposite>
@@ -652,7 +715,7 @@
  </timeline>
  <metas>
   <meta type="checksumValidation" name="checksumValidation" creator="Harmony Premium" version="1.0">
-   <value data="6A00000000000000030343D8321FD6D692B77872D8BC7FFFFCB1A04799786869EDA8743471C44B4D4B783C0B9B591AEB8E44EB048439E6CA774F392145B6C2EEE6630CECA66DB1AAE5584CF693A70303F7EA199CE3A9F3DADB3C61780E475AF52A12196355D7CD12BBAAE61F89A7D61005CB6B0200002D2D2D2D2D424547494E2043455254494649434154452D2D2D2D2D0A4D4949426E444343415157674177494241674943424E49774451594A4B6F5A496876634E4151454642514177506A454C4D416B474131554542684D43513045780A447A414E42674E5642416754426C46315A574A6C597A45654D4277474131554541784D5662476C6A5A57357A5A58497564473976626D4A7662323075593239740A4D423458445449314D4451794E4449774D6A55794D466F5844544D314D4451794D7A49774D6A55794D466F774C54454C4D416B474131554542684D43513045780A486A416342674E5642414D4D46564E47587A41774D544E614D4441774D44466B616E525364314642535442634D413047435371475349623344514542415155410A413073414D45674351514334694D7A6937706D652F2B3955337A3137766777414A343568416B47494A4A4C735535594D4F765A444B744A52315961794F2B33440A6F4F4A7950577162736A6E644B6B6D4733357A49384A35785870584A3646346C41674D42414145774451594A4B6F5A496876634E4151454642514144675945410A46784D6F704758345939635653374142535675723046424E335972767A5549756850316D75542F74595652454836592B3944544B6C692B484F495966745542570A6A4362375931327A503659567752696B37792B2B703330444130476F74305442762F3357434A6D4333796A5667526339356164737778796B69375A4D716B41430A685770575356562B312B6F47466275757553674F4C785346495878734F6F314966624E5A754A787965596F3D0A2D2D2D2D2D454E442043455254494649434154452D2D2D2D2D0A40000000060C7F66A02C4CD1B77C4D28FDF6767BAC50B4C7452C98A6842CE5766E7B7A1D38F79500039545AD34C646F54E5AD40070643830B9C60B68F961471C648AA80E"/>
+   <value data="6A0000000000000003038219F3DE17175376B9B3197DBE3E3D70618658B9A9A82C69B5F5B0058A8C8AB9FDCA5A98DB2A4F852AC545F8270BB68EF8E08477032F27A2CD2D67AC706B24998D375266C2C2362BD85D2268321B1AFDA0B9CF869B34EBD3D8A294160CD37A6B27DE486617D1C40A6B0200002D2D2D2D2D424547494E2043455254494649434154452D2D2D2D2D0A4D4949426E444343415157674177494241674943424E49774451594A4B6F5A496876634E4151454642514177506A454C4D416B474131554542684D43513045780A447A414E42674E5642416754426C46315A574A6C597A45654D4277474131554541784D5662476C6A5A57357A5A58497564473976626D4A7662323075593239740A4D423458445449314D4451794E4449774D6A55794D466F5844544D314D4451794D7A49774D6A55794D466F774C54454C4D416B474131554542684D43513045780A486A416342674E5642414D4D46564E47587A41774D544E614D4441774D44466B616E525364314642535442634D413047435371475349623344514542415155410A413073414D45674351514334694D7A6937706D652F2B3955337A3137766777414A343568416B47494A4A4C735535594D4F765A444B744A52315961794F2B33440A6F4F4A7950577162736A6E644B6B6D4733357A49384A35785870584A3646346C41674D42414145774451594A4B6F5A496876634E4151454642514144675945410A46784D6F704758345939635653374142535675723046424E335972767A5549756850316D75542F74595652454836592B3944544B6C692B484F495966745542570A6A4362375931327A503659567752696B37792B2B703330444130476F74305442762F3357434A6D4333796A5667526339356164737778796B69375A4D716B41430A685770575356562B312B6F47466275757553674F4C785346495878734F6F314966624E5A754A787965596F3D0A2D2D2D2D2D454E442043455254494649434154452D2D2D2D2D0A400000008B7A12C11612FD639E231B627D676D2C999EACAD34B045ECE7937ABEA5F1AC3A4A9AB946FBD3918F16D084AFF84F9A0396A709FCF54CB318F2AED4C110E2953E"/>
   </meta>
  </metas>
 </project>

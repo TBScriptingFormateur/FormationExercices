@@ -1,2 +1,2 @@
 <!DOCTYPE Scene>
-<Scene EnableVersionDrawing="0" Name="EXO_05_How_many_pegs"/>
+<Scene Name="EXO_05_How_many_pegs" EnableVersionDrawing="0"/>
